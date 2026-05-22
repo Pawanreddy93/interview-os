@@ -36,14 +36,21 @@ export default function VoiceRecorder({ onTranscript, disabled }: VoiceRecorderP
       rec.onresult = (event: any) => {
         let transcript = "";
 
-        for (let i = event.resultIndex; i < event.results.length; i++) {
+        for (let i = 0; i < event.results.length; i++) {
           transcript += event.results[i][0].transcript;
         }
 
-        onTranscript(transcript);
+        console.log("VOICE:", transcript);
+
+        if (transcript.trim()) {
+          onTranscript(transcript.trim());
+        }
       };
 
-      rec.onerror = () => stopRecording();
+      rec.onerror = (e: any) => {
+        console.log("Speech Error:", e);
+        stopRecording();
+      };
       rec.onend = () => {
         setIsRecording(false);
         stopAmplitude();
