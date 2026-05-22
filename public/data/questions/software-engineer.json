@@ -1,0 +1,542 @@
+[
+  {
+    "id": 1,
+    "difficulty": "easy",
+    "question": "Tell me about yourself.",
+    "followUps": [
+      "What specific experience first got you interested in software engineering?",
+      "Which of your past projects are you most proud of and why?"
+    ]
+  },
+  {
+    "id": 2,
+    "difficulty": "easy",
+    "question": "What programming languages do you know?",
+    "followUps": [
+      "Which language do you feel strongest in, and why?",
+      "Have you had to learn a new language quickly for a project? How did you approach it?"
+    ]
+  },
+  {
+    "id": 3,
+    "difficulty": "easy",
+    "question": "What is Object-Oriented Programming (OOP)?",
+    "followUps": [
+      "Can you give a real-world analogy that explains OOP?",
+      "What are the four main principles of OOP?"
+    ]
+  },
+  {
+    "id": 4,
+    "difficulty": "easy",
+    "question": "Explain inheritance in OOP.",
+    "followUps": [
+      "What is the difference between single and multiple inheritance?",
+      "When would you choose composition over inheritance?"
+    ]
+  },
+  {
+    "id": 5,
+    "difficulty": "easy",
+    "question": "What is polymorphism?",
+    "followUps": [
+      "Can you give a code example of polymorphism?",
+      "What is the difference between compile-time and runtime polymorphism?"
+    ]
+  },
+  {
+    "id": 6,
+    "difficulty": "easy",
+    "question": "What is encapsulation?",
+    "followUps": [
+      "How does encapsulation improve code security?",
+      "Give an example of encapsulation in a language you use."
+    ]
+  },
+  {
+    "id": 7,
+    "difficulty": "easy",
+    "question": "What is the difference between frontend and backend development?",
+    "followUps": [
+      "Which side do you prefer to work on and why?",
+      "What does a full-stack developer do?"
+    ]
+  },
+  {
+    "id": 8,
+    "difficulty": "easy",
+    "question": "What is an API?",
+    "followUps": [
+      "Have you built or consumed an API before? Walk me through it.",
+      "What is the difference between a public API and a private API?"
+    ]
+  },
+  {
+    "id": 9,
+    "difficulty": "easy",
+    "question": "What is a REST API?",
+    "followUps": [
+      "What are the key constraints of REST?",
+      "What is the difference between REST and GraphQL?"
+    ]
+  },
+  {
+    "id": 10,
+    "difficulty": "easy",
+    "question": "What is the difference between GET and POST requests?",
+    "followUps": [
+      "When would you use PUT vs PATCH?",
+      "What does idempotency mean in the context of HTTP methods?"
+    ]
+  },
+  {
+    "id": 11,
+    "difficulty": "easy",
+    "question": "What is JSON and why is it used?",
+    "followUps": [
+      "What are the advantages of JSON over XML?",
+      "How do you parse JSON in your preferred language?"
+    ]
+  },
+  {
+    "id": 12,
+    "difficulty": "easy",
+    "question": "What is a database?",
+    "followUps": [
+      "What is the difference between a database and a spreadsheet?",
+      "What databases have you worked with?"
+    ]
+  },
+  {
+    "id": 13,
+    "difficulty": "easy",
+    "question": "What is the difference between SQL and NoSQL databases?",
+    "followUps": [
+      "When would you choose NoSQL over SQL?",
+      "Give an example of a use case for each."
+    ]
+  },
+  {
+    "id": 14,
+    "difficulty": "easy",
+    "question": "What is Git and why is it used?",
+    "followUps": [
+      "What is the difference between git pull and git fetch?",
+      "How do you resolve a merge conflict in Git?"
+    ]
+  },
+  {
+    "id": 15,
+    "difficulty": "easy",
+    "question": "Explain version control and why it matters.",
+    "followUps": [
+      "What branching strategy have you used on a team?",
+      "What is the difference between Git and GitHub?"
+    ]
+  },
+  {
+    "id": 16,
+    "difficulty": "easy",
+    "question": "What is debugging and how do you approach it?",
+    "followUps": [
+      "Describe a tough bug you fixed. How did you find the root cause?",
+      "What debugging tools do you typically use?"
+    ]
+  },
+  {
+    "id": 17,
+    "difficulty": "easy",
+    "question": "What is the difference between compile-time and runtime errors?",
+    "followUps": [
+      "Which type of error is harder to diagnose and why?",
+      "How do you handle exceptions in your code?"
+    ]
+  },
+  {
+    "id": 18,
+    "difficulty": "easy",
+    "question": "What is HTML and what is it used for?",
+    "followUps": [
+      "What is the difference between semantic and non-semantic HTML?",
+      "What are HTML5 features you commonly use?"
+    ]
+  },
+  {
+    "id": 19,
+    "difficulty": "easy",
+    "question": "What is the difference between HTML, CSS, and JavaScript?",
+    "followUps": [
+      "How do these three technologies work together to build a webpage?",
+      "What happens in the browser when a webpage loads?"
+    ]
+  },
+  {
+    "id": 20,
+    "difficulty": "easy",
+    "question": "What is responsive design?",
+    "followUps": [
+      "How do you implement a responsive layout using CSS?",
+      "What is the mobile-first design approach?"
+    ]
+  },
+  {
+    "id": 21,
+    "difficulty": "medium",
+    "question": "Explain asynchronous programming.",
+    "followUps": [
+      "What is the difference between asynchronous and parallel programming?",
+      "How does the JavaScript event loop work?"
+    ]
+  },
+  {
+    "id": 22,
+    "difficulty": "medium",
+    "question": "What are Promises in JavaScript?",
+    "followUps": [
+      "What is the difference between Promise.all and Promise.race?",
+      "How does async/await relate to Promises?"
+    ]
+  },
+  {
+    "id": 23,
+    "difficulty": "medium",
+    "question": "What is Node.js and what makes it different from browser JavaScript?",
+    "followUps": [
+      "What is the Node.js event loop?",
+      "When would you choose Node.js over another backend language?"
+    ]
+  },
+  {
+    "id": 24,
+    "difficulty": "medium",
+    "question": "Explain the React component lifecycle.",
+    "followUps": [
+      "How do hooks like useEffect relate to lifecycle methods?",
+      "What happens during the reconciliation phase?"
+    ]
+  },
+  {
+    "id": 25,
+    "difficulty": "medium",
+    "question": "What is state management and why is it needed?",
+    "followUps": [
+      "What are the trade-offs between local state and global state?",
+      "Have you used Redux or Context API? What are the differences?"
+    ]
+  },
+  {
+    "id": 26,
+    "difficulty": "medium",
+    "question": "What is the difference between let, const, and var in JavaScript?",
+    "followUps": [
+      "What is hoisting and how does it affect var?",
+      "When would you use const vs let?"
+    ]
+  },
+  {
+    "id": 27,
+    "difficulty": "medium",
+    "question": "Explain closures in JavaScript.",
+    "followUps": [
+      "Can you give a practical use case for closures?",
+      "How do closures relate to memory management?"
+    ]
+  },
+  {
+    "id": 28,
+    "difficulty": "medium",
+    "question": "What is authentication?",
+    "followUps": [
+      "What is the difference between authentication and authorization?",
+      "What is session-based vs token-based authentication?"
+    ]
+  },
+  {
+    "id": 29,
+    "difficulty": "medium",
+    "question": "What is authorization?",
+    "followUps": [
+      "What is Role-Based Access Control (RBAC)?",
+      "How do you implement authorization in an API?"
+    ]
+  },
+  {
+    "id": 30,
+    "difficulty": "medium",
+    "question": "Explain JWT (JSON Web Tokens).",
+    "followUps": [
+      "What are the three parts of a JWT?",
+      "What are the security risks with JWTs and how do you mitigate them?"
+    ]
+  },
+  {
+    "id": 31,
+    "difficulty": "medium",
+    "question": "What is the MVC architecture pattern?",
+    "followUps": [
+      "What is the role of each layer in MVC?",
+      "How does MVC compare to MVVM?"
+    ]
+  },
+  {
+    "id": 32,
+    "difficulty": "medium",
+    "question": "What is middleware in a web application?",
+    "followUps": [
+      "Give an example of middleware you have used.",
+      "What is the order of middleware execution and why does it matter?"
+    ]
+  },
+  {
+    "id": 33,
+    "difficulty": "medium",
+    "question": "Explain CRUD operations.",
+    "followUps": [
+      "How do CRUD operations map to HTTP methods?",
+      "How would you implement CRUD for a REST API endpoint?"
+    ]
+  },
+  {
+    "id": 34,
+    "difficulty": "medium",
+    "question": "What is normalization in DBMS?",
+    "followUps": [
+      "What are the different normal forms?",
+      "When would you denormalize a database?"
+    ]
+  },
+  {
+    "id": 35,
+    "difficulty": "medium",
+    "question": "Explain indexing in databases.",
+    "followUps": [
+      "What is the trade-off of adding too many indexes?",
+      "What is the difference between a clustered and non-clustered index?"
+    ]
+  },
+  {
+    "id": 36,
+    "difficulty": "medium",
+    "question": "What is multithreading?",
+    "followUps": [
+      "What are the risks of multithreading?",
+      "How do you synchronize threads to avoid race conditions?"
+    ]
+  },
+  {
+    "id": 37,
+    "difficulty": "medium",
+    "question": "Explain memory leaks — what causes them and how do you prevent them?",
+    "followUps": [
+      "How do you detect a memory leak in production?",
+      "What tools have you used to profile memory usage?"
+    ]
+  },
+  {
+    "id": 38,
+    "difficulty": "medium",
+    "question": "What are design patterns and why are they useful?",
+    "followUps": [
+      "Can you name the three categories of design patterns?",
+      "What design pattern have you applied in a real project?"
+    ]
+  },
+  {
+    "id": 39,
+    "difficulty": "medium",
+    "question": "Explain the Singleton design pattern.",
+    "followUps": [
+      "What are the downsides of Singleton?",
+      "How is Singleton implemented in a thread-safe way?"
+    ]
+  },
+  {
+    "id": 40,
+    "difficulty": "medium",
+    "question": "What is Docker and what problem does it solve?",
+    "followUps": [
+      "What is the difference between a Docker image and a container?",
+      "How does Docker differ from a virtual machine?"
+    ]
+  },
+  {
+    "id": 41,
+    "difficulty": "hard",
+    "question": "Explain microservices architecture.",
+    "followUps": [
+      "What are the challenges of migrating a monolith to microservices?",
+      "How do microservices communicate with each other?"
+    ]
+  },
+  {
+    "id": 42,
+    "difficulty": "hard",
+    "question": "What is load balancing and how does it work?",
+    "followUps": [
+      "What are the different load balancing algorithms?",
+      "What is the difference between L4 and L7 load balancing?"
+    ]
+  },
+  {
+    "id": 43,
+    "difficulty": "hard",
+    "question": "How do you design a scalable application?",
+    "followUps": [
+      "What is the difference between horizontal and vertical scaling?",
+      "At what point would you introduce a CDN?"
+    ]
+  },
+  {
+    "id": 44,
+    "difficulty": "hard",
+    "question": "What is caching and when should you use it?",
+    "followUps": [
+      "What is a cache eviction policy and what types exist?",
+      "How do you handle cache invalidation?"
+    ]
+  },
+  {
+    "id": 45,
+    "difficulty": "hard",
+    "question": "What is the difference between Redis and Memcached?",
+    "followUps": [
+      "When would you choose Redis over Memcached?",
+      "What data structures does Redis support that Memcached does not?"
+    ]
+  },
+  {
+    "id": 46,
+    "difficulty": "hard",
+    "question": "Explain the CI/CD pipeline.",
+    "followUps": [
+      "What is the difference between continuous delivery and continuous deployment?",
+      "What tools have you used in a CI/CD pipeline?"
+    ]
+  },
+  {
+    "id": 47,
+    "difficulty": "hard",
+    "question": "What is Kubernetes and what problems does it solve?",
+    "followUps": [
+      "What is the difference between a Pod and a Deployment in Kubernetes?",
+      "How does Kubernetes handle container failures?"
+    ]
+  },
+  {
+    "id": 48,
+    "difficulty": "hard",
+    "question": "Explain event-driven architecture.",
+    "followUps": [
+      "What is the difference between event-driven and request-driven architecture?",
+      "What are the trade-offs of event-driven systems?"
+    ]
+  },
+  {
+    "id": 49,
+    "difficulty": "hard",
+    "question": "What are race conditions and how do you prevent them?",
+    "followUps": [
+      "Give an example of a race condition in a web application.",
+      "How does a mutex prevent race conditions?"
+    ]
+  },
+  {
+    "id": 50,
+    "difficulty": "hard",
+    "question": "Explain deadlock — what causes it and how do you resolve it?",
+    "followUps": [
+      "What are the four conditions required for a deadlock to occur?",
+      "How does database deadlock detection work?"
+    ]
+  },
+  {
+    "id": 51,
+    "difficulty": "hard",
+    "question": "Explain the CAP theorem.",
+    "followUps": [
+      "Which two properties does your database prioritize and why?",
+      "How does the CAP theorem affect distributed system design?"
+    ]
+  },
+  {
+    "id": 52,
+    "difficulty": "hard",
+    "question": "What is eventual consistency?",
+    "followUps": [
+      "How does eventual consistency differ from strong consistency?",
+      "Give a real-world example where eventual consistency is acceptable."
+    ]
+  },
+  {
+    "id": 53,
+    "difficulty": "hard",
+    "question": "Explain the key challenges of distributed systems.",
+    "followUps": [
+      "What is a network partition and how do you design around it?",
+      "How do distributed systems handle clock synchronization?"
+    ]
+  },
+  {
+    "id": 54,
+    "difficulty": "hard",
+    "question": "What is rate limiting and how do you implement it?",
+    "followUps": [
+      "What is the difference between the token bucket and leaky bucket algorithms?",
+      "How do you implement rate limiting in a distributed environment?"
+    ]
+  },
+  {
+    "id": 55,
+    "difficulty": "hard",
+    "question": "Explain WebSockets and when you would use them over HTTP.",
+    "followUps": [
+      "How is a WebSocket connection established?",
+      "What are the challenges of scaling WebSocket connections?"
+    ]
+  },
+  {
+    "id": 56,
+    "difficulty": "hard",
+    "question": "How do you optimize application performance?",
+    "followUps": [
+      "How do you identify performance bottlenecks?",
+      "What profiling tools have you used?"
+    ]
+  },
+  {
+    "id": 57,
+    "difficulty": "hard",
+    "question": "Explain database sharding.",
+    "followUps": [
+      "What is the difference between horizontal and vertical partitioning?",
+      "What are the challenges with resharding?"
+    ]
+  },
+  {
+    "id": 58,
+    "difficulty": "hard",
+    "question": "What are message queues and why are they used?",
+    "followUps": [
+      "What is the difference between a message queue and a pub/sub system?",
+      "What happens if a consumer fails to process a message?"
+    ]
+  },
+  {
+    "id": 59,
+    "difficulty": "hard",
+    "question": "How would you design a scalable chat application?",
+    "followUps": [
+      "How would you handle message delivery guarantees?",
+      "How would you store and retrieve chat history efficiently?"
+    ]
+  },
+  {
+    "id": 60,
+    "difficulty": "hard",
+    "question": "Describe a challenging software project you worked on. What was your approach?",
+    "followUps": [
+      "What would you do differently if you started that project today?",
+      "How did you handle disagreements with teammates during that project?"
+    ]
+  }
+]

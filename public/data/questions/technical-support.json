@@ -1,0 +1,542 @@
+[
+  {
+    "id": 1,
+    "difficulty": "easy",
+    "question": "Tell me about yourself.",
+    "followUps": [
+      "What drew you specifically to technical support as a career?",
+      "Describe your best experience helping a customer resolve a technical issue."
+    ]
+  },
+  {
+    "id": 2,
+    "difficulty": "easy",
+    "question": "What is technical support and what does the role involve?",
+    "followUps": [
+      "How do you balance speed and thoroughness when resolving tickets?",
+      "What makes a great technical support engineer, in your opinion?"
+    ]
+  },
+  {
+    "id": 3,
+    "difficulty": "easy",
+    "question": "What is troubleshooting and how do you approach it?",
+    "followUps": [
+      "Walk me through your step-by-step troubleshooting process for a new issue.",
+      "How do you document your troubleshooting steps for future reference?"
+    ]
+  },
+  {
+    "id": 4,
+    "difficulty": "easy",
+    "question": "How do you handle difficult or frustrated customers?",
+    "followUps": [
+      "Can you describe a time you turned a frustrated customer into a satisfied one?",
+      "What do you do when you don't know the answer immediately?"
+    ]
+  },
+  {
+    "id": 5,
+    "difficulty": "easy",
+    "question": "What is a ticketing system and how have you used one?",
+    "followUps": [
+      "How do you prioritize multiple open tickets?",
+      "What fields do you consider most important when logging a ticket?"
+    ]
+  },
+  {
+    "id": 6,
+    "difficulty": "easy",
+    "question": "Explain what an SLA (Service Level Agreement) is.",
+    "followUps": [
+      "What happens when an SLA is breached?",
+      "How do you ensure you meet your SLA targets consistently?"
+    ]
+  },
+  {
+    "id": 7,
+    "difficulty": "easy",
+    "question": "What is a help desk?",
+    "followUps": [
+      "What is the difference between a help desk and a service desk?",
+      "What KPIs are typically measured in a help desk environment?"
+    ]
+  },
+  {
+    "id": 8,
+    "difficulty": "easy",
+    "question": "What is the difference between hardware and software?",
+    "followUps": [
+      "Can you give examples of common hardware and software issues you've encountered?",
+      "How do firmware updates differ from software updates?"
+    ]
+  },
+  {
+    "id": 9,
+    "difficulty": "easy",
+    "question": "What is an operating system?",
+    "followUps": [
+      "What operating systems are you most comfortable supporting?",
+      "What is the difference between Windows and macOS from a support perspective?"
+    ]
+  },
+  {
+    "id": 10,
+    "difficulty": "easy",
+    "question": "Explain what DNS is and how it works.",
+    "followUps": [
+      "What happens when a DNS lookup fails?",
+      "How would you troubleshoot a DNS resolution issue?"
+    ]
+  },
+  {
+    "id": 11,
+    "difficulty": "easy",
+    "question": "What is an IP address?",
+    "followUps": [
+      "What is the difference between IPv4 and IPv6?",
+      "What is the difference between a public and private IP address?"
+    ]
+  },
+  {
+    "id": 12,
+    "difficulty": "easy",
+    "question": "What is the difference between LAN and WAN?",
+    "followUps": [
+      "What is a MAN (Metropolitan Area Network)?",
+      "How does a router connect a LAN to a WAN?"
+    ]
+  },
+  {
+    "id": 13,
+    "difficulty": "easy",
+    "question": "What is a VPN and why is it used?",
+    "followUps": [
+      "What are the security benefits of using a VPN?",
+      "How would you help a user troubleshoot a VPN connection issue?"
+    ]
+  },
+  {
+    "id": 14,
+    "difficulty": "easy",
+    "question": "What is antivirus software and how does it work?",
+    "followUps": [
+      "What is the difference between antivirus and anti-malware?",
+      "What steps do you take if a computer is infected with a virus?"
+    ]
+  },
+  {
+    "id": 15,
+    "difficulty": "easy",
+    "question": "Explain what safe mode is and when you would use it.",
+    "followUps": [
+      "What types of problems can be diagnosed in safe mode?",
+      "What is the difference between safe mode and safe mode with networking?"
+    ]
+  },
+  {
+    "id": 16,
+    "difficulty": "easy",
+    "question": "What is remote desktop support?",
+    "followUps": [
+      "What tools have you used for remote desktop support?",
+      "What security considerations apply when doing remote support?"
+    ]
+  },
+  {
+    "id": 17,
+    "difficulty": "easy",
+    "question": "What is the booting process of a computer?",
+    "followUps": [
+      "What would you check if a computer fails to boot?",
+      "What is the difference between a warm boot and a cold boot?"
+    ]
+  },
+  {
+    "id": 18,
+    "difficulty": "easy",
+    "question": "What is BIOS and what does it do?",
+    "followUps": [
+      "What is the difference between BIOS and UEFI?",
+      "When would you need to access the BIOS during troubleshooting?"
+    ]
+  },
+  {
+    "id": 19,
+    "difficulty": "easy",
+    "question": "What is the difference between RAM and ROM?",
+    "followUps": [
+      "How does insufficient RAM affect system performance?",
+      "How would you diagnose a RAM-related issue?"
+    ]
+  },
+  {
+    "id": 20,
+    "difficulty": "easy",
+    "question": "What is cache memory and why is it important?",
+    "followUps": [
+      "How does clearing the cache fix certain software problems?",
+      "What is the difference between L1, L2, and L3 cache?"
+    ]
+  },
+  {
+    "id": 21,
+    "difficulty": "medium",
+    "question": "Explain TCP/IP and how it works.",
+    "followUps": [
+      "What is the difference between TCP and UDP?",
+      "At what layer of the OSI model does TCP operate?"
+    ]
+  },
+  {
+    "id": 22,
+    "difficulty": "medium",
+    "question": "What is DHCP and what happens when it fails?",
+    "followUps": [
+      "What is the DORA process in DHCP?",
+      "What is an APIPA address and what does it indicate?"
+    ]
+  },
+  {
+    "id": 23,
+    "difficulty": "medium",
+    "question": "What is the difference between HTTP and HTTPS?",
+    "followUps": [
+      "What is TLS and how does it secure HTTPS?",
+      "What does an expired SSL certificate cause and how do you fix it?"
+    ]
+  },
+  {
+    "id": 24,
+    "difficulty": "medium",
+    "question": "What is a firewall and how does it protect a network?",
+    "followUps": [
+      "What is the difference between a hardware and software firewall?",
+      "How would you troubleshoot a blocked application caused by a firewall?"
+    ]
+  },
+  {
+    "id": 25,
+    "difficulty": "medium",
+    "question": "Walk me through your network troubleshooting steps.",
+    "followUps": [
+      "What command-line tools do you use for network diagnostics?",
+      "How do you determine if an issue is local to the user or network-wide?"
+    ]
+  },
+  {
+    "id": 26,
+    "difficulty": "medium",
+    "question": "What would you do if a user reports the internet is not working?",
+    "followUps": [
+      "How do you quickly determine if it's a hardware, software, or ISP issue?",
+      "What is the first command you run and why?"
+    ]
+  },
+  {
+    "id": 27,
+    "difficulty": "medium",
+    "question": "How do you troubleshoot a slow computer?",
+    "followUps": [
+      "What Task Manager metrics do you look at first?",
+      "How do you determine if the issue is hardware or software related?"
+    ]
+  },
+  {
+    "id": 28,
+    "difficulty": "medium",
+    "question": "Explain what a blue screen of death (BSOD) is and how you troubleshoot it.",
+    "followUps": [
+      "What information does a BSOD stop code tell you?",
+      "What are the most common causes of a BSOD?"
+    ]
+  },
+  {
+    "id": 29,
+    "difficulty": "medium",
+    "question": "What is Active Directory?",
+    "followUps": [
+      "How do you reset a user password in Active Directory?",
+      "What is a Group Policy Object (GPO)?"
+    ]
+  },
+  {
+    "id": 30,
+    "difficulty": "medium",
+    "question": "What is a password policy and why is it important?",
+    "followUps": [
+      "What are common password policy best practices?",
+      "How do you handle a situation where a user's account is locked out?"
+    ]
+  },
+  {
+    "id": 31,
+    "difficulty": "medium",
+    "question": "Explain Multi-Factor Authentication (MFA).",
+    "followUps": [
+      "What are the three factors of authentication?",
+      "How do you help a user who is locked out due to MFA?"
+    ]
+  },
+  {
+    "id": 32,
+    "difficulty": "medium",
+    "question": "What is phishing and how do you help users identify it?",
+    "followUps": [
+      "What do you do if a user clicks a phishing link?",
+      "How do you educate non-technical users about phishing?"
+    ]
+  },
+  {
+    "id": 33,
+    "difficulty": "medium",
+    "question": "What is malware and what types exist?",
+    "followUps": [
+      "What is the first action you take when malware is detected?",
+      "How do ransomware attacks typically unfold?"
+    ]
+  },
+  {
+    "id": 34,
+    "difficulty": "medium",
+    "question": "Walk me through email troubleshooting steps.",
+    "followUps": [
+      "How do you diagnose email not sending vs. not receiving?",
+      "What is a common cause of emails going to the spam folder?"
+    ]
+  },
+  {
+    "id": 35,
+    "difficulty": "medium",
+    "question": "How do you troubleshoot VPN connectivity issues?",
+    "followUps": [
+      "What causes VPN split tunneling and when is it used?",
+      "What logs do you check when VPN authentication fails?"
+    ]
+  },
+  {
+    "id": 36,
+    "difficulty": "medium",
+    "question": "How do you prioritize tickets when you have multiple urgent requests?",
+    "followUps": [
+      "How do you communicate delays to affected users?",
+      "Describe a time you had to manage multiple high-priority issues simultaneously."
+    ]
+  },
+  {
+    "id": 37,
+    "difficulty": "medium",
+    "question": "What is escalation and when would you escalate a ticket?",
+    "followUps": [
+      "How do you hand off a ticket to the next tier effectively?",
+      "What information should always be included when escalating?"
+    ]
+  },
+  {
+    "id": 38,
+    "difficulty": "medium",
+    "question": "Walk me through printer troubleshooting steps.",
+    "followUps": [
+      "How do you fix a printer stuck in the offline state?",
+      "What do you check when a print job disappears from the queue?"
+    ]
+  },
+  {
+    "id": 39,
+    "difficulty": "medium",
+    "question": "What is a device driver and what problems can outdated drivers cause?",
+    "followUps": [
+      "How do you safely update a device driver?",
+      "What do you do if a driver update causes a system crash?"
+    ]
+  },
+  {
+    "id": 40,
+    "difficulty": "medium",
+    "question": "How do you communicate technical solutions to non-technical users?",
+    "followUps": [
+      "Give an example of how you explained a complex issue in simple terms.",
+      "How do you confirm the user actually understands your instructions?"
+    ]
+  },
+  {
+    "id": 41,
+    "difficulty": "hard",
+    "question": "Explain root cause analysis (RCA) and how you conduct one.",
+    "followUps": [
+      "What is the 5 Whys technique?",
+      "How do you document and present findings from an RCA?"
+    ]
+  },
+  {
+    "id": 42,
+    "difficulty": "hard",
+    "question": "Describe a major technical issue you resolved. Walk me through it.",
+    "followUps": [
+      "What was your biggest learning from that incident?",
+      "How did you prevent recurrence of that issue?"
+    ]
+  },
+  {
+    "id": 43,
+    "difficulty": "hard",
+    "question": "How do you handle a high-priority, business-critical incident?",
+    "followUps": [
+      "What is your communication strategy during a major outage?",
+      "How do you ensure proper stakeholder updates without causing panic?"
+    ]
+  },
+  {
+    "id": 44,
+    "difficulty": "hard",
+    "question": "What is incident management?",
+    "followUps": [
+      "What are the stages of the incident management lifecycle?",
+      "How does a post-incident review (PIR) improve future responses?"
+    ]
+  },
+  {
+    "id": 45,
+    "difficulty": "hard",
+    "question": "Explain the difference between problem management and incident management.",
+    "followUps": [
+      "What is a known error record and how is it used?",
+      "How do you manage recurring incidents through problem management?"
+    ]
+  },
+  {
+    "id": 46,
+    "difficulty": "hard",
+    "question": "What is change management in IT?",
+    "followUps": [
+      "What is a Change Advisory Board (CAB)?",
+      "What is an emergency change and how is it handled?"
+    ]
+  },
+  {
+    "id": 47,
+    "difficulty": "hard",
+    "question": "Explain the basics of ITIL and why it matters in support.",
+    "followUps": [
+      "What are the core ITIL service management processes?",
+      "How does ITIL differ from agile approaches to IT service management?"
+    ]
+  },
+  {
+    "id": 48,
+    "difficulty": "hard",
+    "question": "What is network latency and what causes high latency?",
+    "followUps": [
+      "How do you measure and diagnose high latency?",
+      "What is jitter and how does it affect real-time applications?"
+    ]
+  },
+  {
+    "id": 49,
+    "difficulty": "hard",
+    "question": "Explain packet loss — what causes it and how do you diagnose it?",
+    "followUps": [
+      "What tools do you use to measure packet loss?",
+      "At what percentage does packet loss significantly affect user experience?"
+    ]
+  },
+  {
+    "id": 50,
+    "difficulty": "hard",
+    "question": "What are system logs and why are they important in troubleshooting?",
+    "followUps": [
+      "What types of logs would you examine for a server-side issue?",
+      "How do you correlate logs from multiple systems to find a root cause?"
+    ]
+  },
+  {
+    "id": 51,
+    "difficulty": "hard",
+    "question": "How do you troubleshoot API timeout issues reported by end users?",
+    "followUps": [
+      "How do you determine whether the timeout is client-side or server-side?",
+      "What is a reasonable API timeout threshold for user-facing applications?"
+    ]
+  },
+  {
+    "id": 52,
+    "difficulty": "hard",
+    "question": "What is server downtime and how do you manage communication during it?",
+    "followUps": [
+      "What is a status page and how does it help during downtime?",
+      "How do you execute a disaster recovery plan?"
+    ]
+  },
+  {
+    "id": 53,
+    "difficulty": "hard",
+    "question": "Explain the basics of cloud support.",
+    "followUps": [
+      "What is the shared responsibility model in cloud computing?",
+      "How do you support users having issues with cloud storage or apps?"
+    ]
+  },
+  {
+    "id": 54,
+    "difficulty": "hard",
+    "question": "How do you troubleshoot Microsoft Office 365 issues?",
+    "followUps": [
+      "What is the Microsoft 365 admin center used for?",
+      "How do you diagnose a user who cannot sign into their M365 account?"
+    ]
+  },
+  {
+    "id": 55,
+    "difficulty": "hard",
+    "question": "Explain the Windows Event Viewer and how you use it in troubleshooting.",
+    "followUps": [
+      "What is the difference between Application, System, and Security logs?",
+      "What event ID would you look for when diagnosing login failures?"
+    ]
+  },
+  {
+    "id": 56,
+    "difficulty": "hard",
+    "question": "What would you do during a full system outage?",
+    "followUps": [
+      "How do you triage and establish the scope of an outage quickly?",
+      "How do you coordinate between multiple teams during an outage?"
+    ]
+  },
+  {
+    "id": 57,
+    "difficulty": "hard",
+    "question": "Walk me through your remote troubleshooting process.",
+    "followUps": [
+      "How do you guide a non-technical user through steps remotely?",
+      "What do you do when remote access tools fail or are unavailable?"
+    ]
+  },
+  {
+    "id": 58,
+    "difficulty": "hard",
+    "question": "What metrics are important in technical support roles?",
+    "followUps": [
+      "What is First Call Resolution (FCR) and why does it matter?",
+      "How do you use CSAT scores to improve your support quality?"
+    ]
+  },
+  {
+    "id": 59,
+    "difficulty": "hard",
+    "question": "How do you ensure customer satisfaction in a support role?",
+    "followUps": [
+      "How do you follow up after closing a ticket to ensure the issue is truly resolved?",
+      "What do you do when a customer is unhappy even after the issue is fixed?"
+    ]
+  },
+  {
+    "id": 60,
+    "difficulty": "hard",
+    "question": "Describe your most challenging support case. How did you handle it?",
+    "followUps": [
+      "What technical skills did that case require you to develop?",
+      "How did that experience change how you approach difficult tickets?"
+    ]
+  }
+]

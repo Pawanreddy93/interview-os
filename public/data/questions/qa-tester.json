@@ -1,0 +1,542 @@
+[
+  {
+    "id": 1,
+    "difficulty": "easy",
+    "question": "Tell me about yourself.",
+    "followUps": [
+      "What first attracted you to quality assurance as a career path?",
+      "What types of software have you tested and which did you find most challenging?"
+    ]
+  },
+  {
+    "id": 2,
+    "difficulty": "easy",
+    "question": "What is software testing and why is it important?",
+    "followUps": [
+      "What happens when software ships without adequate testing?",
+      "What is the cost of finding a bug in production vs. during development?"
+    ]
+  },
+  {
+    "id": 3,
+    "difficulty": "easy",
+    "question": "What is the difference between QA and QC?",
+    "followUps": [
+      "Is QA preventive or corrective in nature?",
+      "How do QA and QC work together in a software team?"
+    ]
+  },
+  {
+    "id": 4,
+    "difficulty": "easy",
+    "question": "What is a test case and what makes a good one?",
+    "followUps": [
+      "What are the required fields in a well-written test case?",
+      "How do you determine how many test cases are enough?"
+    ]
+  },
+  {
+    "id": 5,
+    "difficulty": "easy",
+    "question": "What is a bug and how do you report one effectively?",
+    "followUps": [
+      "What information must a bug report always include?",
+      "How do you reproduce an intermittent bug?"
+    ]
+  },
+  {
+    "id": 6,
+    "difficulty": "easy",
+    "question": "Explain the difference between severity and priority in bug reporting.",
+    "followUps": [
+      "Give an example of a high-severity, low-priority bug.",
+      "Who determines priority vs. severity in your workflow?"
+    ]
+  },
+  {
+    "id": 7,
+    "difficulty": "easy",
+    "question": "What is regression testing?",
+    "followUps": [
+      "When should regression testing be performed?",
+      "How do you decide which tests to include in a regression suite?"
+    ]
+  },
+  {
+    "id": 8,
+    "difficulty": "easy",
+    "question": "What is smoke testing and when is it performed?",
+    "followUps": [
+      "What is the difference between smoke testing and sanity testing?",
+      "Who typically runs smoke tests — QA or developers?"
+    ]
+  },
+  {
+    "id": 9,
+    "difficulty": "easy",
+    "question": "What is sanity testing?",
+    "followUps": [
+      "Is sanity testing documented? Why or why not?",
+      "When would you run sanity testing instead of regression testing?"
+    ]
+  },
+  {
+    "id": 10,
+    "difficulty": "easy",
+    "question": "What is black-box testing?",
+    "followUps": [
+      "What are the advantages of black-box testing?",
+      "What techniques do you use in black-box testing?"
+    ]
+  },
+  {
+    "id": 11,
+    "difficulty": "easy",
+    "question": "What is white-box testing?",
+    "followUps": [
+      "What skills are required to perform white-box testing?",
+      "What is the difference between statement coverage and branch coverage?"
+    ]
+  },
+  {
+    "id": 12,
+    "difficulty": "easy",
+    "question": "What is functional testing?",
+    "followUps": [
+      "How do you create test cases for functional testing?",
+      "What is the difference between functional and end-to-end testing?"
+    ]
+  },
+  {
+    "id": 13,
+    "difficulty": "easy",
+    "question": "What is non-functional testing?",
+    "followUps": [
+      "Name four types of non-functional testing.",
+      "Why is non-functional testing often overlooked?"
+    ]
+  },
+  {
+    "id": 14,
+    "difficulty": "easy",
+    "question": "What is UI testing?",
+    "followUps": [
+      "What makes UI tests brittle and how do you avoid it?",
+      "How is UI testing different from accessibility testing?"
+    ]
+  },
+  {
+    "id": 15,
+    "difficulty": "easy",
+    "question": "What is usability testing?",
+    "followUps": [
+      "How do you measure success in a usability test?",
+      "What is the difference between usability testing and UX testing?"
+    ]
+  },
+  {
+    "id": 16,
+    "difficulty": "easy",
+    "question": "Explain the SDLC (Software Development Lifecycle).",
+    "followUps": [
+      "At which phases of the SDLC should QA be involved?",
+      "What is the difference between waterfall and agile SDLC?"
+    ]
+  },
+  {
+    "id": 17,
+    "difficulty": "easy",
+    "question": "Explain the STLC (Software Testing Lifecycle).",
+    "followUps": [
+      "What is the entry and exit criteria for each STLC phase?",
+      "How does STLC relate to SDLC?"
+    ]
+  },
+  {
+    "id": 18,
+    "difficulty": "easy",
+    "question": "What is the bug life cycle?",
+    "followUps": [
+      "What statuses can a bug have in a typical bug life cycle?",
+      "What happens when a developer marks a bug as 'not reproducible'?"
+    ]
+  },
+  {
+    "id": 19,
+    "difficulty": "easy",
+    "question": "What is test data and how do you manage it?",
+    "followUps": [
+      "How do you handle sensitive or personal data in test environments?",
+      "What is the difference between static and dynamic test data?"
+    ]
+  },
+  {
+    "id": 20,
+    "difficulty": "easy",
+    "question": "What is manual testing and when is it preferred over automation?",
+    "followUps": [
+      "What types of tests are best suited for manual execution?",
+      "What are the limitations of manual testing?"
+    ]
+  },
+  {
+    "id": 21,
+    "difficulty": "medium",
+    "question": "What is automation testing and when should you automate?",
+    "followUps": [
+      "What is the ROI calculation for deciding to automate a test?",
+      "What types of tests should you avoid automating?"
+    ]
+  },
+  {
+    "id": 22,
+    "difficulty": "medium",
+    "question": "What is the difference between Selenium and Playwright?",
+    "followUps": [
+      "Which would you choose for a new project today and why?",
+      "What is Playwright's auto-waiting feature and why is it beneficial?"
+    ]
+  },
+  {
+    "id": 23,
+    "difficulty": "medium",
+    "question": "What is API testing?",
+    "followUps": [
+      "What do you validate when testing an API endpoint?",
+      "How is API testing different from UI testing?"
+    ]
+  },
+  {
+    "id": 24,
+    "difficulty": "medium",
+    "question": "Explain how you use Postman for API testing.",
+    "followUps": [
+      "How do you use Postman collections to organize test suites?",
+      "How do you set up environment variables in Postman?"
+    ]
+  },
+  {
+    "id": 25,
+    "difficulty": "medium",
+    "question": "What is performance testing?",
+    "followUps": [
+      "What metrics do you capture during performance testing?",
+      "At what stage of the SDLC should performance testing occur?"
+    ]
+  },
+  {
+    "id": 26,
+    "difficulty": "medium",
+    "question": "What is load testing?",
+    "followUps": [
+      "What tools have you used for load testing?",
+      "What is the difference between load testing and stress testing?"
+    ]
+  },
+  {
+    "id": 27,
+    "difficulty": "medium",
+    "question": "What is stress testing?",
+    "followUps": [
+      "What is the goal of stress testing — failure or limits?",
+      "How do you recover a system gracefully after a stress test?"
+    ]
+  },
+  {
+    "id": 28,
+    "difficulty": "medium",
+    "question": "How do you write effective test scenarios?",
+    "followUps": [
+      "What is the difference between a test scenario and a test case?",
+      "How do you ensure test scenarios cover all user journeys?"
+    ]
+  },
+  {
+    "id": 29,
+    "difficulty": "medium",
+    "question": "What is boundary value analysis?",
+    "followUps": [
+      "Give an example of applying BVA to a date input field.",
+      "What is the difference between BVA and equivalence partitioning?"
+    ]
+  },
+  {
+    "id": 30,
+    "difficulty": "medium",
+    "question": "Explain equivalence partitioning.",
+    "followUps": [
+      "How does equivalence partitioning reduce the number of test cases needed?",
+      "Can you apply equivalence partitioning to non-numeric inputs?"
+    ]
+  },
+  {
+    "id": 31,
+    "difficulty": "medium",
+    "question": "What is exploratory testing?",
+    "followUps": [
+      "How do you document exploratory testing sessions?",
+      "What is a test charter in exploratory testing?"
+    ]
+  },
+  {
+    "id": 32,
+    "difficulty": "medium",
+    "question": "Explain agile testing and how QA fits in an agile team.",
+    "followUps": [
+      "What does a QA tester do during a sprint?",
+      "How does shift-left testing relate to agile?"
+    ]
+  },
+  {
+    "id": 33,
+    "difficulty": "medium",
+    "question": "What is a test plan and what does it contain?",
+    "followUps": [
+      "What is the difference between a test plan and a test strategy?",
+      "Who is responsible for creating and maintaining the test plan?"
+    ]
+  },
+  {
+    "id": 34,
+    "difficulty": "medium",
+    "question": "Explain the defect tracking tools you have used.",
+    "followUps": [
+      "How do you write a defect report that developers will act on quickly?",
+      "What workflow do you set up in a defect tracking tool?"
+    ]
+  },
+  {
+    "id": 35,
+    "difficulty": "medium",
+    "question": "What is JIRA and how do you use it in QA?",
+    "followUps": [
+      "How do you link test cases to JIRA stories?",
+      "What JIRA fields do you consider most important for a bug ticket?"
+    ]
+  },
+  {
+    "id": 36,
+    "difficulty": "medium",
+    "question": "What is retesting and how is it different from regression testing?",
+    "followUps": [
+      "Who typically performs retesting — QA or developers?",
+      "When should retesting fail and a bug be reopened?"
+    ]
+  },
+  {
+    "id": 37,
+    "difficulty": "medium",
+    "question": "What is the difference between verification and validation?",
+    "followUps": [
+      "Which comes first — verification or validation?",
+      "Give a real example of each in a software project."
+    ]
+  },
+  {
+    "id": 38,
+    "difficulty": "medium",
+    "question": "Explain positive and negative testing.",
+    "followUps": [
+      "Why is negative testing sometimes more important than positive testing?",
+      "Give an example of both for a login form."
+    ]
+  },
+  {
+    "id": 39,
+    "difficulty": "medium",
+    "question": "What is compatibility testing?",
+    "followUps": [
+      "What environments do you typically test for compatibility?",
+      "How do you prioritize which configurations to test?"
+    ]
+  },
+  {
+    "id": 40,
+    "difficulty": "medium",
+    "question": "Explain cross-browser testing.",
+    "followUps": [
+      "What tools do you use for cross-browser testing?",
+      "How do you handle inconsistent CSS rendering across browsers?"
+    ]
+  },
+  {
+    "id": 41,
+    "difficulty": "hard",
+    "question": "Explain how you design an automation framework from scratch.",
+    "followUps": [
+      "What design patterns are commonly used in automation frameworks?",
+      "How do you ensure your framework is maintainable as the application evolves?"
+    ]
+  },
+  {
+    "id": 42,
+    "difficulty": "hard",
+    "question": "What is data-driven testing?",
+    "followUps": [
+      "How do you separate test data from test logic in a data-driven framework?",
+      "What file formats do you use to store test data?"
+    ]
+  },
+  {
+    "id": 43,
+    "difficulty": "hard",
+    "question": "Explain the keyword-driven testing framework.",
+    "followUps": [
+      "What are the advantages of keyword-driven testing for non-technical stakeholders?",
+      "How do you handle exceptions in a keyword-driven framework?"
+    ]
+  },
+  {
+    "id": 44,
+    "difficulty": "hard",
+    "question": "How does CI/CD integrate with automated testing?",
+    "followUps": [
+      "What tests should run on every commit vs. nightly?",
+      "How do you prevent flaky tests from blocking deployments?"
+    ]
+  },
+  {
+    "id": 45,
+    "difficulty": "hard",
+    "question": "How have you integrated automated tests with Jenkins?",
+    "followUps": [
+      "How do you configure Jenkins to trigger tests on pull requests?",
+      "What do you do when Jenkins builds start failing intermittently?"
+    ]
+  },
+  {
+    "id": 46,
+    "difficulty": "hard",
+    "question": "What are flaky tests and how do you deal with them?",
+    "followUps": [
+      "What are the most common causes of flaky tests?",
+      "Is it better to fix, quarantine, or delete a flaky test?"
+    ]
+  },
+  {
+    "id": 47,
+    "difficulty": "hard",
+    "question": "How do you handle production bugs that were missed during testing?",
+    "followUps": [
+      "What process do you follow to add a new test for each production bug?",
+      "How do you communicate a missed bug to stakeholders without damaging trust?"
+    ]
+  },
+  {
+    "id": 48,
+    "difficulty": "hard",
+    "question": "Explain root cause analysis in a QA context.",
+    "followUps": [
+      "How do you prevent the same class of bugs from recurring?",
+      "What is a defect leakage metric and how do you reduce it?"
+    ]
+  },
+  {
+    "id": 49,
+    "difficulty": "hard",
+    "question": "What metrics do you track to measure testing effectiveness?",
+    "followUps": [
+      "What is defect density and how do you calculate it?",
+      "How do you measure test coverage beyond just code coverage?"
+    ]
+  },
+  {
+    "id": 50,
+    "difficulty": "hard",
+    "question": "Explain API automation testing.",
+    "followUps": [
+      "How do you validate the response schema of an API automatically?",
+      "How do you handle authentication tokens in API test automation?"
+    ]
+  },
+  {
+    "id": 51,
+    "difficulty": "hard",
+    "question": "What is database testing and what do you validate?",
+    "followUps": [
+      "How do you verify data integrity after CRUD operations?",
+      "What is stored procedure testing?"
+    ]
+  },
+  {
+    "id": 52,
+    "difficulty": "hard",
+    "question": "Explain the basics of security testing.",
+    "followUps": [
+      "What is the OWASP Top 10 and how does it guide security testing?",
+      "Have you performed SQL injection or XSS testing? Describe your approach."
+    ]
+  },
+  {
+    "id": 53,
+    "difficulty": "hard",
+    "question": "What is penetration testing?",
+    "followUps": [
+      "What is the difference between white-box and black-box penetration testing?",
+      "What tools are commonly used in penetration testing?"
+    ]
+  },
+  {
+    "id": 54,
+    "difficulty": "hard",
+    "question": "Explain mobile application testing.",
+    "followUps": [
+      "What are the unique challenges of testing mobile apps vs. web apps?",
+      "How do you test an app across multiple devices without owning them all?"
+    ]
+  },
+  {
+    "id": 55,
+    "difficulty": "hard",
+    "question": "What is accessibility testing?",
+    "followUps": [
+      "What is WCAG and what conformance level do most companies target?",
+      "What tools do you use for accessibility testing?"
+    ]
+  },
+  {
+    "id": 56,
+    "difficulty": "hard",
+    "question": "How do you prioritize your testing tasks when time is limited?",
+    "followUps": [
+      "How do you communicate testing scope reductions to stakeholders?",
+      "What is risk-based testing and how does it help with prioritization?"
+    ]
+  },
+  {
+    "id": 57,
+    "difficulty": "hard",
+    "question": "Explain risk-based testing.",
+    "followUps": [
+      "How do you assess the risk of each feature or module?",
+      "What happens when a low-risk area turns out to have critical bugs?"
+    ]
+  },
+  {
+    "id": 58,
+    "difficulty": "hard",
+    "question": "Describe a critical bug you found. What was the impact and how did you find it?",
+    "followUps": [
+      "How did you ensure that bug was fixed correctly before closing it?",
+      "What test cases did you add to prevent regression of that bug?"
+    ]
+  },
+  {
+    "id": 59,
+    "difficulty": "hard",
+    "question": "How do you ensure overall software quality in your role?",
+    "followUps": [
+      "How do you foster a quality culture beyond just the QA team?",
+      "What is the 'shift-left' principle and how have you applied it?"
+    ]
+  },
+  {
+    "id": 60,
+    "difficulty": "hard",
+    "question": "Explain end-to-end testing.",
+    "followUps": [
+      "How do you balance the cost and maintenance of E2E tests?",
+      "What is the testing pyramid and where do E2E tests fit?"
+    ]
+  }
+]

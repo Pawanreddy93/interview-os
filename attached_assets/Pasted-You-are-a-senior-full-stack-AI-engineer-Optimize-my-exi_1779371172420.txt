@@ -1,0 +1,256 @@
+You are a senior full-stack AI engineer.
+
+Optimize my existing InterviewOS AI interview platform for MINIMUM API USAGE and MAXIMUM FREE-TIER SCALABILITY.
+
+Current issue:
+The app reaches AI quota in around 10–25 questions because too many AI API calls are happening continuously.
+
+I want a complete architecture refactor with the following requirements.
+
+====================================
+CORE GOAL
+=========
+
+Reduce AI usage by 80–90%.
+
+Use AI ONLY for:
+
+* final interview evaluation
+* final analytics
+* final score generation
+
+Do NOT use AI continuously during the interview.
+
+====================================
+NEW INTERVIEW FLOW
+==================
+
+The interview system must work like this:
+
+1. Load local interview questions from local JSON files.
+2. Ask questions sequentially.
+3. Capture user voice using browser APIs only.
+4. Convert voice to text locally in browser.
+5. Store answers locally during interview.
+6. DO NOT call AI after every answer.
+7. At the end of interview:
+
+   * send all questions + answers in ONE Gemini API call
+   * generate analytics
+   * generate score
+   * generate strengths
+   * generate weaknesses
+   * generate communication analysis
+   * generate technical analysis
+   * generate confidence analysis
+   * generate grammar analysis
+   * generate improvement suggestions
+
+====================================
+REMOVE EXPENSIVE FEATURES
+=========================
+
+REMOVE:
+
+* realtime AI interviewer
+* continuous Gemini conversation
+* full chat history sending
+* realtime voice AI APIs
+* Deepgram streaming
+* OpenAI realtime APIs
+* analytics per question
+* grammar analysis per question
+* confidence analysis per question
+
+====================================
+USE FREE BROWSER APIs
+=====================
+
+Use browser native APIs only:
+
+Speech Recognition:
+window.SpeechRecognition
+OR
+window.webkitSpeechRecognition
+
+Text To Speech:
+window.speechSynthesis
+
+Implement:
+
+* Start recording button
+* Stop recording button
+* Auto transcript
+* Read question aloud using speechSynthesis
+
+====================================
+QUESTION SYSTEM
+===============
+
+Create local question banks.
+
+Structure:
+
+/data/questions/
+technical-support.json
+software-engineer.json
+hr.json
+customer-support.json
+
+Each role should contain around 50 interview questions.
+
+Questions must be categorized:
+
+* easy
+* medium
+* hard
+
+Example structure:
+
+[
+{
+"id": 1,
+"difficulty": "easy",
+"question": "Tell me about yourself"
+}
+]
+
+====================================
+INTERVIEW ENGINE
+================
+
+Create a local interview engine.
+
+Flow:
+
+Question → User Answer → Save Locally → Next Question
+
+NO AI CALL HERE.
+
+Store answers in state/local storage/database.
+
+====================================
+FINAL ANALYTICS SYSTEM
+======================
+
+ONLY ONE AI API CALL at end.
+
+Use Gemini Flash model only.
+
+Use:
+gemini-1.5-flash
+
+DO NOT use Gemini Pro.
+
+Prompt should be highly optimized and short.
+
+Send only:
+
+* role
+* questions
+* answers
+
+Return JSON format:
+
+{
+"overall_score": 85,
+"communication": 80,
+"technical_knowledge": 75,
+"confidence": 70,
+"grammar": 78,
+"strengths": [],
+"weaknesses": [],
+"suggestions": []
+}
+
+====================================
+LIMIT API USAGE
+===============
+
+Implement:
+
+* max 4 interviews per day per user
+* localStorage based tracking
+* cooldown system
+
+====================================
+PERFORMANCE OPTIMIZATION
+========================
+
+DO NOT:
+
+* send full chat history
+* resend previous answers
+* resend analytics repeatedly
+
+DO:
+
+* keep prompts under 500 tokens
+* minimize response length
+* cache static data
+* lazy load heavy components
+
+====================================
+TECH STACK
+==========
+
+Frontend:
+
+* React
+* TailwindCSS
+
+Backend:
+
+* Node.js
+* Express
+
+AI:
+
+* Gemini Flash API only
+
+Database:
+
+* Supabase or local storage
+
+Hosting:
+
+* Vercel/Replit compatible
+
+====================================
+UI REQUIREMENTS
+===============
+
+Keep current InterviewOS UI.
+
+Improve:
+
+* mobile responsiveness
+* loading states
+* voice recording animation
+* progress bar
+* analytics dashboard
+
+====================================
+OUTPUT REQUIREMENTS
+===================
+
+Refactor the existing codebase completely.
+
+Generate:
+
+* optimized architecture
+* updated frontend
+* updated backend
+* local question system
+* speech recognition integration
+* final analytics API route
+* Gemini Flash integration
+* interview limit system
+* optimized prompts
+* reusable components
+* cleaner folder structure
+
+Ensure the app can support:
+100–300 interview questions on free tier usage.
+
+Return production-ready code.
