@@ -28,23 +28,19 @@ export default function VoiceRecorder({ onTranscript, disabled }: VoiceRecorderP
     if (SR) {
       setSupported(true);
       const rec = new SR();
-      rec.continuous = true;
+      rec.continuous = false;
       rec.interimResults = true;
       rec.lang = "en-US";
 
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       rec.onresult = (event: any) => {
-        let finalChunk = "";
+        let transcript = "";
+
         for (let i = event.resultIndex; i < event.results.length; i++) {
-          if (event.results[i].isFinal) {
-            finalChunk += event.results[i][0].transcript + " ";
-          }
+          transcript += event.results[i][0].transcript;
         }
-        if (finalChunk.trim()) {
-          transcriptRef.current += finalChunk;
-          if (silenceTimerRef.current) clearTimeout(silenceTimerRef.current);
-          silenceTimerRef.current = setTimeout(() => stopRecording(), 2500);
-        }
+
+        onTranscript(transcript);
       };
 
       rec.onerror = () => stopRecording();
