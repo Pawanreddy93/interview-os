@@ -1,4 +1,9 @@
-const LIMIT_KEY = 'interviewDailyUsage';
+const userEmail =
+  typeof window !== "undefined"
+    ? localStorage.getItem("userEmail") || "guest"
+    : "guest";
+
+const LIMIT_KEY = `interviewDailyUsage_${userEmail}`;
 const MAX_DAILY = 4;
 
 interface DailyUsage {
