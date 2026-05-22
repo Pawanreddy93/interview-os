@@ -402,7 +402,9 @@ function InterviewContent() {
 
           <div className="flex items-center justify-between gap-4">
             <VoiceRecorder
-              onTranscript={handleVoiceTranscript}
+             onTranscript={(text) => {
+              setAnswer((prev) => prev + " " + text);
+            }}
               disabled={isGenerating}
             />
 
