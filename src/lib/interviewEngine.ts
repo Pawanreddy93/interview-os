@@ -165,13 +165,32 @@ export function saveCompletedInterview(
 }
 
 export function getAllSavedInterviews(): SavedInterview[] {
-  if (typeof window === 'undefined') return [];
-  
+  if (typeof window === "undefined") return [];
+
   try {
     const userEmail = localStorage.getItem("userEmail") || "guest";
     const storageKey = `savedInterviews_${userEmail}`;
 
-    return JSON.parse(localStorage.getItem(storageKey) || "[]");
+    // new user data
+    const userData = localStorage.getItem(storageKey);
+
+    if (userData) {
+      return JSON.parse(userData);
+    }
+
+    // old shared data
+    const oldData = localStorage.getItem("savedInterviews");
+
+    if (oldData) {
+      const parsed = JSON.parse(oldData);
+
+      // migrate old data
+      localStorage.setItem(storageKey, JSON.stringify(parsed));
+
+      return parsed;
+    }
+
+    return [];
   } catch {
     return [];
   }
