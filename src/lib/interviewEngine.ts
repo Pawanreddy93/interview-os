@@ -155,15 +155,23 @@ export function saveCompletedInterview(
   };
 
   const existing = getAllSavedInterviews();
+
+  const userEmail = localStorage.getItem("userEmail") || "guest";
+  const storageKey = `savedInterviews_${userEmail}`;
+  
   existing.unshift(saved);
-  localStorage.setItem('savedInterviews', JSON.stringify(existing.slice(0, 20)));
+  localStorage.setItem(storageKey, JSON.stringify(existing.slice(0, 20)));
   localStorage.setItem(`analytics_${session.id}`, JSON.stringify(analytics));
 }
 
 export function getAllSavedInterviews(): SavedInterview[] {
   if (typeof window === 'undefined') return [];
+  
   try {
-    return JSON.parse(localStorage.getItem('savedInterviews') || '[]');
+    const userEmail = localStorage.getItem("userEmail") || "guest";
+    const storageKey = `savedInterviews_${userEmail}`;
+
+    return JSON.parse(localStorage.getItem(storageKey) || "[]");
   } catch {
     return [];
   }
