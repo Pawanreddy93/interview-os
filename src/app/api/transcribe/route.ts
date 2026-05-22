@@ -6,7 +6,7 @@ export async function POST(req: NextRequest) {
     const audio = formData.get("audio") as Blob;
 
     const response = await fetch(
-      "https://api.deepgram.com/v1/listen?model=nova-2&smart_format=true&punctuate=true&language=en-IN",
+      "https://api.deepgram.com/v1/listen?model=nova-2-general&smart_format=true&punctuate=true&diarize=false&filler_words=false&language=en-IN&utterances=true",
       {
         method: "POST",
         headers: {
