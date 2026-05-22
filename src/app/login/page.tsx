@@ -25,6 +25,8 @@ export default function Login() {
     
     try {
       await signInWithEmailAndPassword(auth, email, password);
+      localStorage.setItem("userEmail", email);
+      
       router.push('/dashboard');
     } catch (err: unknown) {
       setError(err instanceof Error ? err.message : String(err) || 'Failed to sign in. Please check your credentials.');
