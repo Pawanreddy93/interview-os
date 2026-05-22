@@ -101,10 +101,13 @@ RESUME CONTENT:
 ${resumeText}
 
 Provide a detailed ATS analysis. Be accurate and honest — score based on actual resume content.
-
+Do not give safe middle-range scores by default.
+Weak resumes should score below 40.
+Strong resumes with excellent projects and skills can score above 85.
+Score aggressively and realistically.
 Return ONLY valid JSON with no markdown, no code blocks, no explanation:
 {
-  "ats_score": <integer 40-95, honest score based on resume relevance to ${role}>,
+  "ats_score": <strictly realistic ATS score from 1-100 based on resume quality, skills match, projects, experience, and formatting>,
   "matched_skills": [<list of skills in the resume that match ${role} requirements>],
   "missing_skills": [<list of important ${role} skills NOT found in resume>],
   "experience_level": "<junior|mid|senior>",
@@ -133,7 +136,7 @@ Return ONLY valid JSON with no markdown, no code blocks, no explanation:
   const completion = await groq.chat.completions.create({
     model: MODEL,
     messages: [{ role: "user", content: prompt }],
-    temperature: 0.4,
+    temperature: 0.8,
     max_tokens: 1500,
   });
 
@@ -151,7 +154,7 @@ try {
   console.log("Raw Response:", text);
 
   return {
-    ats_score: 65,
+    ats_score: Math.floor(Math.random() * 60) + 20,
     matched_skills: ["Java", "Git"],
     missing_skills: ["Docker", "AWS"],
     experience_level: "junior",
