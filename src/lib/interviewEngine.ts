@@ -144,6 +144,8 @@ export function saveCompletedInterview(
 ): void {
   if (typeof window === 'undefined') return;
 
+  const userEmail =
+  localStorage.getItem("userEmail") || "guest";
   const saved: SavedInterview = {
     id: session.id,
     role: session.role,
@@ -161,7 +163,11 @@ export function saveCompletedInterview(
   
   existing.unshift(saved);
   localStorage.setItem(storageKey, JSON.stringify(existing.slice(0, 20)));
-  localStorage.setItem(`analytics_${session.id}`, JSON.stringify(analytics));
+  
+  localStorage.setItem(
+    `analytics_${userEmail}_${session.id}`,
+    JSON.stringify(analytics)
+  );
 }
 
 export function getAllSavedInterviews(): SavedInterview[] {
@@ -198,8 +204,14 @@ export function getAllSavedInterviews(): SavedInterview[] {
 
 export function getAnalyticsById(id: string): InterviewAnalytics | null {
   if (typeof window === 'undefined') return null;
+
   try {
-    const raw = localStorage.getItem(`analytics_${id}`);
+    const userEmail = localStorage.getItem("userEmail") || "guest";
+
+    const raw = localStorage.getItem(
+      `analytics_${userEmail}_${id}`
+    );
+
     return raw ? JSON.parse(raw) : null;
   } catch {
     return null;
