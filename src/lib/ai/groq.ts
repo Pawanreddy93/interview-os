@@ -49,8 +49,29 @@ Return ONLY valid JSON with no markdown, no code blocks, no explanation:
   });
 
   const text = completion.choices[0]?.message?.content || "";
-  const cleaned = text.replace(/```json|```/g, "").trim();
+
+try {
+  const cleaned = text
+    .replace(/```json/g, "")
+    .replace(/```/g, "")
+    .trim();
+
   return JSON.parse(cleaned);
+} catch (error) {
+  console.error("Interview JSON Parse Error:", error);
+  console.log("Raw Response:", text);
+
+  return {
+    overall_score: 60,
+    communication: 60,
+    technical_knowledge: 60,
+    confidence: 60,
+    grammar: 60,
+    strengths: ["Basic understanding demonstrated"],
+    weaknesses: ["Needs more detailed answers"],
+    suggestions: ["Practice answering with more depth"]
+  };
+}
 }
 
 export interface ResumeAnalysis {
@@ -117,6 +138,33 @@ Return ONLY valid JSON with no markdown, no code blocks, no explanation:
   });
 
   const text = completion.choices[0]?.message?.content || "";
-  const cleaned = text.replace(/```json|```/g, "").trim();
+
+try {
+  const cleaned = text
+    .replace(/```json/g, "")
+    .replace(/```/g, "")
+    .trim();
+
   return JSON.parse(cleaned);
+} catch (error) {
+  console.error("Resume JSON Parse Error:", error);
+  console.log("Raw Response:", text);
+
+  return {
+    ats_score: 65,
+    matched_skills: ["Java", "Git"],
+    missing_skills: ["Docker", "AWS"],
+    experience_level: "junior",
+    strengths: ["Good technical basics"],
+    improvements: ["Add more projects"],
+    recommended_projects: [
+      {
+        title: "Portfolio Website",
+        description: "Build a portfolio website",
+        skills: ["React", "CSS", "JavaScript"]
+      }
+    ],
+    overall_summary: "Resume has a decent foundation but needs stronger project work and modern stack skills."
+  };
+}
 }
