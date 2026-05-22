@@ -144,8 +144,6 @@ export function saveCompletedInterview(
 ): void {
   if (typeof window === 'undefined') return;
 
-  const userEmail =
-  localStorage.getItem("userEmail") || "guest";
   const saved: SavedInterview = {
     id: session.id,
     role: session.role,
@@ -160,10 +158,14 @@ export function saveCompletedInterview(
 
   const userEmail = localStorage.getItem("userEmail") || "guest";
   const storageKey = `savedInterviews_${userEmail}`;
-  
+
   existing.unshift(saved);
-  localStorage.setItem(storageKey, JSON.stringify(existing.slice(0, 20)));
-  
+
+  localStorage.setItem(
+    storageKey,
+    JSON.stringify(existing.slice(0, 20))
+  );
+
   localStorage.setItem(
     `analytics_${userEmail}_${session.id}`,
     JSON.stringify(analytics)
