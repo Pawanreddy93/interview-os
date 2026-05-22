@@ -29,7 +29,7 @@ export default function VoiceRecorder({ onTranscript, disabled }: VoiceRecorderP
       setSupported(true);
       const rec = new SR();
       rec.continuous = false;
-      rec.interimResults = true;
+      rec.interimResults = false;
       rec.lang = "en-US";
 
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
