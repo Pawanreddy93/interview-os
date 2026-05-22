@@ -20,7 +20,13 @@ export default function VoiceRecorder({
   async function startRecording() {
     try {
       const stream = await navigator.mediaDevices.getUserMedia({
-        audio: true,
+        audio: {
+          noiseSuppression: true,
+          echoCancellation: true,
+          autoGainControl: true,
+          sampleRate: 48000,
+          channelCount: 1,
+        },
       });
 
       const recorder = new MediaRecorder(stream);
@@ -33,7 +39,7 @@ export default function VoiceRecorder({
 
       recorder.onstop = async () => {
         const blob = new Blob(chunksRef.current, {
-          type: "audio/webm",
+          type: "audio/webm;codecs=opus",
         });
 
         const formData = new FormData();
@@ -47,11 +53,11 @@ export default function VoiceRecorder({
         const data = await res.json();
 
         if (data.transcript) {
-          onTranscript(data.transcript);
+          onTranscript(data.transcript.trim());
         }
       };
 
-      recorder.start();
+      recorder.start(100);
 
       mediaRecorderRef.current = recorder;
       setIsRecording(true);
