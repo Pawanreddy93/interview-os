@@ -204,17 +204,44 @@ export function getAllSavedInterviews(): SavedInterview[] {
   }
 }
 
-export function getAnalyticsById(id: string): InterviewAnalytics | null {
-  if (typeof window === 'undefined') return null;
+export function getAnalyticsById(
+  id: string
+): InterviewAnalytics | null {
+
+  if (typeof window === "undefined") return null;
 
   try {
-    const userEmail = localStorage.getItem("userEmail") || "guest";
+    const userEmail =
+      localStorage.getItem("userEmail") || "guest";
 
-    const raw = localStorage.getItem(
+    // new user-specific analytics
+    const newAnalytics = localStorage.getItem(
       `analytics_${userEmail}_${id}`
     );
 
-    return raw ? JSON.parse(raw) : null;
+    if (newAnalytics) {
+      return JSON.parse(newAnalytics);
+    }
+
+    // fallback old analytics
+    const oldAnalytics = localStorage.getItem(
+      `analytics_${id}`
+    );
+
+    if (oldAnalytics) {
+      const parsed = JSON.parse(oldAnalytics);
+
+      // migrate old data
+      localStorage.setItem(
+        `analytics_${userEmail}_${id}`,
+        JSON.stringify(parsed)
+      );
+
+      return parsed;
+    }
+
+    return null;
+
   } catch {
     return null;
   }
